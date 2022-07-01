@@ -1,0 +1,135 @@
+* {
+    margin: auto;
+}
+body {
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    min-width: 320px;
+    background-color: rgb(225, 222, 222);
+
+  
+}
+p{
+    font-size: 20px;
+    margin-inline-start: 15px;
+}
+.options{
+    margin: auto;
+  
+}
+h1{
+    color: red;
+}
+h3{
+    width: 280px;
+    height: autoS;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    background-color: blue;
+    color: aliceblue;
+    text-transform: uppercase;
+    margin-inline-end: 10px;
+    margin-inline-start: 10px;
+}
+ul {
+    border-radius: 20px;
+    background-color: rgb(123, 202, 255);
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 30px;
+    margin-inline-end: 30px;
+    padding-inline-start: 40px;
+}
+.content.pricelist .options {
+    width: 50%;
+}
+* {
+    font-family: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+}
+div {
+    display:block;
+}
+.result {
+    width: 40%;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    height: 100%;
+    overflow: visible;
+}
+.item{
+    padding: 5px;
+    display: block;
+    margin: 10px;
+    background-color: rgb(255, 255, 255);
+    width: 350px;
+    margin: 20px 0;
+    
+
+}
+.ImgHero{
+    
+    
+    min-width: 30px;
+}
+@media only screen and (min-width: 800px) 
+{
+ .img{
+    
+    width: 30px;
+ }
+    body {
+        width: 800px;
+    }
+    
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 39px;
+        gap: 16px;
+        margin:auto
+    }
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 20px;
+        margin: auto;
+    }
+    .item {
+        width: 800px;
+    }
+   
+    footer {
+        height: 20px;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 4px 14px;
+        margin-top: 40px;
+        object-fit: cover;  
+    }
+
+}
+@media only screen and (min-width: 1200px) {
+  
+    body {
+        width: 1155px;
+        margin: auto;
+    }
+    .item{
+        width: 1100px;
+    }
+    img{
+        
+        width: 1130px;
+    }
+    
+    
+ } 

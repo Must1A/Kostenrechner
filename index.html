@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<link rel="stylesheet" href="./asset/style.css">
+  
+
+</head>
+<body>
+<nav>
+    <ul class="nav-group">
+        <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-1"></i>HOME</a>  </li>
+        <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-apple-whole"></i></a>  </li>
+        <li class="nav-item"><a class="nav-link" href="#">FILME</a>   </li>
+        <li class="nav-item"><a class="nav-link" href="#">IMPRESUM</a> </li> 
+        <li class="nav-item"><a class="nav-link" href="#">FOTOS</a>    </li>
+    </ul>
+<!--IMG-->
+   <div class="ImgHero"><img src="./asset/img/Server-room-interior-in-datacenter-482872096_1226x858.webp" alt=""></div>
+    <div class="options">
+        <div class="item">
+        <h3>Plattform</h3>
+            <p>
+                Die Entwicklungsaufwände für die verschiedenen Plattformen sind vergleichbar.
+                Eine Wahl von zwei Plattformen verdoppelt somit den Aufwand.
+            </p>
+    <ul>
+        <li>
+            <input type="checkbox" name="platforms__1" id="f__platforms__1" value="1">
+            <label for="platforms__1">iOS<span class="explanation">für iPhone und iPad	</span></label>
+        </li>
+            <li>
+                <input type="checkbox" name="platforms__2" id="f__platforms__2" value="1">
+                <label for="platforms__2"> Android
+                    <span class="explanation">für Geräte von Samsung, Sony, HTC, LG etc.
+                    </span>
+                </label>
+            </li>
+        <li>
+                <input type="checkbox" name="platforms__3" id="f__platforms__3" value="1">
+                <label for="platforms__3">Windows (Phone)
+                    <span class="explanation">für Geräte von Nokia, Microsoft etc.
+                    </span>
+                </label>
+        </li>
+    </ul>
+
+
+     </div>
+        <div class="item">
+        <h3>Qualität</h3>
+                        <p> Die angestrebte Qualität hat einen direkten Einfluss auf den Aufwand. 
+                            Erfolgreiche Apps sind oft von hoher Qualität.
+                        </p>
+                <ul>
+                <li>
+                         <input type="radio" name="quality" id="f__quality__1" value="quality__1">
+                         <label for="quality">Niedrig<span class="price ">
+                            x 0.5</span>
+                            <span class="explanation">
+                                Das Meiste funktioniert; allerdings sieht die App etwas unattraktiv aus und crasht manchmal.
+                                Es existiert praktisch keine Dokumentation und die Codequalität ist schlecht.
+                            </span>
+                        </label>
+                </li>
+
+
+                <li>
+            <input type="radio" name="quality" id="f__quality__2" value="quality__2" checked="checked">
+            <label for="quality">
+                Normal										<span class="explanation">
+                    Alles funktioniert; das Aussehen der App entspricht den gängigen Konventionen. Der Code ist solide und die Dokumentation ausreichend.					</span>
+            </label>
+        </li>
+                <li>
+            <input type="radio" name="quality" id="f__quality__3" value="quality__3">
+            <label for="quality">
+                Hoch											<span class="price ">
+                        x 2						</span>
+                                    <span class="explanation">
+                    Alles funktioniert perfekt und schnell; die App ist sehr schön anzuschauen und angenehmn zu bedienen. Der Code ist sehr sauber und modern, die Dokumentation komplett und gut verständlich.					</span>
+            </label>
+        </li>
+            </ul>
+                        </div>
+        <div class="item">
+        <h3>Anzahl Screens</h3>
+                        <p>Die Anzahl unterschiedlicher Ansichten ist ein guter Indikator für den Umfangs der App und wird deshalb als Basiswert für die Berechnung verwendet. Beispiel: Eine App mit einer Übersicht, einer Listenansicht und einer Detailansicht hätte 3 Screens. Ein üblicher Wert für eine durchschnittliche App ist 10.  </p>
+                                            <ul>
+                <li>
+            <input type="text" name="screens" id="f__screens__1" value="">
+            <label for="screens">
+                Screens											<span class="price screens">
+                        x 1<span class="tseparator">.</span>000						</span>
+                                    <span class="explanation">
+                                        </span>
+            </label>
+        </li>
+            </ul>
+                        </div>
+        <div class="item">
+        <h3>GUI-Elemente</h3>
+                        <p>
+                Am einfachsten ist es, die üblichen Bedienelemente zu verwenden. Für eine grafisch stark individualisierte App müssen jedoch eigene Controls entwickelt werden.									</p>
+                                            <ul>
+                <li>
+            <input type="radio" name="customcontrols" id="f__customcontrols__1" value="customcontrols__1" checked="checked">
+            <label for="customcontrols">
+                Standard										<span class="explanation">
+                                        </span>
+            </label>
+        </li>
+                <li>
+            <input type="radio" name="customcontrols" id="f__customcontrols__2" value="customcontrols__2">
+            <label for="customcontrols">
+                Eigene											<span class="price screens">
+                        x 2						</span>
+                                    <span class="explanation">
+                                        </span>
+            </label>
+        </li>
+            </ul>
+                        </div>
+        <div class="item">
+        <h3>Gerätetypen</h3>
+                                            <ul>
+                <li>
+            <input type="radio" name="devicetypes" id="f__devicetypes__1" value="devicetypes__1" checked="checked">
+            <label for="devicetypes">
+                Ein Gerätetyp										<span class="explanation">
+                                        </span>
+            </label>
+        </li>
+                <li>
+            <input type="radio" name="devicetypes" id="f__devicetypes__2" value="devicetypes__2">
+            <label for="devicetypes">
+                Smartphone und Tablet											<span class="price screens">
+                        x 1.5						</span>
+                                    <span class="explanation">
+                                        </span>
+            </label>
+        </li>
+            </ul>
+                        </div>
+        <div class="item">
+        <h3>Bildschirmformate</h3>
+                                            <ul>
+                <li>
+            <input type="radio" name="screenorientations" id="f__screenorientations__1" value="screenorientations__1" checked="checked">
+            <label for="screenorientations">
+                Ein Format										<span class="explanation">
+                                        </span>
+            </label>
+        </li>
+                <li>
+            <input type="radio" name="screenorientations" id="f__screenorientations__2" value="screenorientations__2">
+            <label for="screenorientations">
+                Hoch- und Querformat											<span class="price screens">
+                        x 1.3						</span>
+                                    <span class="explanation">
+                                        </span>
+            </label>
+        </li>
+            </ul>
+                        </div>
+        <div class="item">
+        <h3>Sicherheit</h3>
+                        <p>
+                Wenn in Ihrer App sehr sensitive Daten verarbeitet werden, muss dies in allen Bereichen berücksichtigt und getestet werden.									</p>
+                                            <ul>
+                <li>
+            <input type="radio" name="security" id="f__security__1" value="security__1" checked="checked">
+            <label for="security">
+                Normal										<span class="explanation">
+                                        </span>
+            </label>
+        </li>
+                <li>
+            <input type="radio" name="security" id="f__security__2" value="security__2">
+            <label for="security">
+                Erhöht											<span class="price ">
+                        x 1.3						</span>
+                                    <span class="explanation">
+                                        </span>
+            </label>
+        </li>
+            </ul>
+                        </div>
+        <div class="item">
+        <h3>Unterstütze Betriebssystemversionen</h3>
+                        <p>
+                Je mehr Versionen unterstützt werden, desto grösser ist die Anzahl potentieller Benutzer aber auch der Aufwand für Entwicklung und Wartung.									</p>
+                                            <ul>
+                <li>
+            <input type="radio" name="osversions" id="f__osversions__1" value="osversions__1">
+            <label for="osversions">
+                Eine											<span class="price ">
+                        x 0.7						</span>
+                                    <span class="explanation">
+                    Nur die neuste Version wird unterstützt (Abdeckung von ca. 40%).					</span>
+            </label>
+        </li>
+                <li>
+            <input type="radio" name="osversions" id="f__osversions__2" value="osversions__2" checked="checked">
+            <label for="osversions">
+                Zwei										<span class="explanation">
+                    Neben der neusten wird auch die vorherige Version unterstützt (Standard; Abdeckung von ca. 75%).					</span>
+            </label>
+        </li>
+                <li>
+            <input type="radio" name="osversions" id="f__osversions__3" value="osversions__3">
+            <label for="osversions">
+                Drei											<span class="price ">
+                        x 1.5						</span>
+                                    <span class="explanation">
+                    Neben der neusten werden zwei vorherige Version unterstützt (Abdeckung von ca. 90%).					</span>
+            </label>
+        </li>
+            </ul>
+                        </div>
+        <div class="item">
+        <h3>Anzahl Sprachen/Regionen</h3>
+                                            <ul>
+                <li>
+            <input type="text" name="languages" id="f__languages__1" value="1">
+            <label for="languages">
+                Sprachen										<span class="explanation">
+                                        </span>
+            </label>
+        </li>
+            </ul>
+                        </div>
+        <div class="item">
+        <h3>Deployment</h3>
+                                            <ul>
+                <li>
+            <input type="checkbox" name="deploymentvariants__1" id="f__deploymentvariants__1" value="1">
+            <label for="deploymentvariants__1">
+                App Store											<span class="price ">
+                        1<span class="tseparator">.</span>000						</span>
+                                    <span class="explanation">
+                    Packaging, Signing, Preflight, Übermittlung, Freischaltung					</span>
+            </label>
+        </li>
+                <li>
+            <input type="checkbox" name="deploymentvariants__2" id="f__deploymentvariants__2" value="1">
+            <label for="deploymentvariants__2">
+                Enterprise											<span class="price ">
+                        1<span class="tseparator">.</span>000						</span>
+                                    <span class="explanation">
+                    Packaging, Signing und Vorbereiten für interne Distribution					</span>
+            </label>
+        </li>
+            </ul>
+                        </div>
+        <div class="item">
+        <h3>Spezialfunktionen</h3>
+                                            <div>
+                <h4>Allgemeines</h4>
+                <ul>
+                <li>
+            <input type="checkbox" name="other__1" id="f__other__1" value="1">
+            <label for="other__1">
+                In-App Payments											<span class="price ">
+                        5<span class="tseparator">.</span>000						</span>
+                                    <span class="explanation">
+                                        </span>
+            </label>
+        </li>
+                <li>
+            <input type="checkbox" name="other__2" id="f__other__2" value="1">
+            <label for="other__2">
+                Push Notifications											<span class="price ">
+                        5<span class="tseparator">.</span>000						</span>
+                                    <span class="explanation">
+                    Empfang, Anzeige und Verarbeitung von Benachrichtigungen, auch wenn die App nicht läuft					</span>
+            </label>
+        </li>
+                <li>
+            <input type="checkbox" name="other__3" id="f__other__3" value="1">
+            <label for="other__3">
+                Schlüsselbundzugriff											<span class="price ">
+                        3<span class="tseparator">.</span>000						</span>
+                                    <span class="explanation">
+                    Speichern und Lesen von speziell geschützten Zugangsdaten/Passwörtern					</span>
+            </label>
+        </li>
+                <li>
+            <input type="checkbox" name="other__4" id="f__other__4" value="1">
+            <label for="other__4">
+                Statistik											<span class="price ">
+                        3<span class="tseparator">.</span>000						</span>
+                                    <span class="explanation">
+                    Aufzeichnung/Übermittlung des Benutzerverhaltens					</span>
+            </label>
+        </li>
+                <li>
+            <input type="checkbox" name="other__5" id="f__other__5" value="1">
+            <label for="other__5">
+                WebView											<span class="price ">
+                        2<span class="tseparator">.</span>000						</span>
+                                    <span class="explanation">
+                    Anzeige einer oder mehrere Webseiten innerhalb der App mit eigener Navigation					</span>
+            </label>
+        </li>
+            </ul>
+                        <h4>Karten &amp; Navigation</h4>
+                <ul>
+                <li>
+            <input type="checkbox" name="other__6" id="f__other__6" value="1">
+            <label for="other__6">
+                Maps											<span class="price ">
+                        5<span class="tseparator">.</span>000						</span>
+                                    <span class="explanation">
+                    Darstellung einer Kartenansicht mit Stecknadeln					</span>
+            </label>
+        </li>
+                <li>
+            <input type="checkbox" name="other__7" id="f__other__7" value="1">
+            <label for="other__7">
+                Geofencing											<span class="price ">
+                        5<span class="tseparator">.</span>000						</span>
+                                    <span class="explanation">
+                    Ausführen einer bestimmten Funktion, wenn der Benutzer eine vordefinierte Region betritt					</span>
+            </label>
+        </li>
+            </ul>
+                        <h4>Daten &amp; Kommunikation</h4>
+                <ul>
+                <li>
+            <input type="checkbox" name="other__8" id="f__other__8" value="1">
+            <label for="other__8">
+                Datenbank/CoreData											<span class="price ">
+                        5<span class="tseparator">.</span>000						</span>
+                                    <span class="explanation">
+                    Speichern, Abrufen und Filtern von grossen Datenmengen direkt auf dem Gerät					</span>
+            </label>
+        </li>
+                <li>
+            <input type="checkbox" name="other__9" id="f__other__9" value="1">
+            <label for="other__9">
+                Schnittstelle zu Server											<span class="price ">
+                        10<span class="tseparator">.</span>000						</span>
+                                    <span class="explanation">
+                    Übermittlung/Empfang von Daten via Internet					</span>
+            </label>
+        </li>
+                <li>
+            <input type="checkbox" name="other__10" id="f__other__10" value="1">
+            <label for="other__10">
+                Inter-application Communication											<span class="price ">
+                        3<span class="tseparator">.</span>000						</span>
+                                    <span class="explanation">
+                    Kommunikation zwischen Apps über URL-Schemes bzw. Intents					</span>
+            </label>
+        </li>
+                <li>
+            <input type="checkbox" name="other__11" id="f__other__11" value="1">
+            <label for="other__11">
+                Bluetooth											<span class="price ">
+                        10<span class="tseparator">.</span>000						</span>
+                                    <span class="explanation">
+                    Kommunikation mit externen Geräten via Bluetooth/BLE					</span>
+            </label>
+        </li>
+                <li>
+            <input type="checkbox" name="other__12" id="f__other__12" value="1">
+            <label for="other__12">
+                GameCenter											<span class="price ">
+                        5<span class="tseparator">.</span>000						</span>
+                                    <span class="explanation">
+                    Integration von GameCenter; Netzwerk- und Ranglisten-Funktionen					</span>
+            </label>
+        </li>
+            </ul>
+                        <h4>Foto, Video und Grafik</h4>
+                <ul>
+                <li>
+            <input type="checkbox" name="other__13" id="f__other__13" value="1">
+            <label for="other__13">
+                Audio/Video abspielen											<span class="price ">
+                        3<span class="tseparator">.</span>000						</span>
+                                    <span class="explanation">
+                                        </span>
+            </label>
+        </li>
+                <li>
+            <input type="checkbox" name="other__14" id="f__other__14" value="1">
+            <label for="other__14">
+                Kamera											<span class="price ">
+                        3<span class="tseparator">.</span>000						</span>
+                                    <span class="explanation">
+                    Aufzeichnung von Fotos oder Videos					</span>
+            </label>
+        </li>
+                <li>
+            <input type="checkbox" name="other__15" id="f__other__15" value="1">
+            <label for="other__15">
+                3D											<span class="price ">
+                        25<span class="tseparator">.</span>000						</span>
+                                    <span class="explanation">
+                    Darstellung von dreidimensionalen Inhalten/Animationen					</span>
+            </label>
+        </li>
+                <li>
+            <input type="checkbox" name="other__16" id="f__other__16" value="1">
+            <label for="other__16">
+                Bilderkennung											<span class="price ">
+                        50<span class="tseparator">.</span>000						</span>
+                                    <span class="explanation">
+                    Erstellung/Adaption von Funktionen zur Bilderkennung (Gesichter, Objekte, ...)					</span>
+            </label>
+        </li>
+            </ul>
+                        <h4>Sonstiges</h4>
+                <ul>
+                <li>
+            <input type="checkbox" name="other__17" id="f__other__17" value="1">
+            <label for="other__17">
+                Eigenes Keyboard											<span class="price ">
+                        5<span class="tseparator">.</span>000						</span>
+                                    <span class="explanation">
+                    Individuelles Keyboard für die Eingabe von vordefinierten Sequenzen oder mit eingeschränkter Zeichenauswahl					</span>
+            </label>
+        </li>
+            </ul>
+                    </div>
+                        </div>
+</div>
+</body>
+</html>
